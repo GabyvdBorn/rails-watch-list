@@ -1,0 +1,13 @@
+<h1>List of all Lists</h1>
+<!-- app/views/restaurants/index.html.erb -->
+
+
+
+  <% @lists.each do |list| %>
+    <li><%= link_to list.name, list_path(list) %></li>
+  <% end %>
+
+
+
+
+<%= link_to "Add list", new_list_path %>

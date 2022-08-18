@@ -1,0 +1,11 @@
+
+<%= simple_form_for(@list) do |f| %>
+  <%= f.input :name %>
+  <%= f.submit %>
+<% end %>
+
+<br>
+<br>
+
+
+<%= link_to "My list", new_list_path, class: "btn btn-small btn-success" %>
